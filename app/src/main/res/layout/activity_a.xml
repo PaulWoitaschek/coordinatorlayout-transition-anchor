@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AActivity">
+
+    <ImageView
+        android:id="@+id/transitionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:transitionName="@string/transition_name" />
+
+    <Button
+        android:id="@+id/no_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClick"
+        android:text="NO_ANCHOR" />
+
+    <Button
+        android:id="@+id/with_anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/no_anchor"
+        android:onClick="onClick"
+        android:text="WITH_ANCHOR" />
+
+</RelativeLayout>
